@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "strict": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "noFallthroughCasesInSwitch": true,
+    "useDefineForClassFields": true
+  }
+}
