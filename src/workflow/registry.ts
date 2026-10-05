@@ -6,7 +6,6 @@ export function validateWorkflow(def: WorkflowDef): string[] {
   if (!Array.isArray(def.steps))
     throw new WorkflowDefinitionError(`Workflow "${def.id}" requires a steps array`, def.id);
 
-
   const seen = new Set<string>();
 
   for (const step of def.steps) {
@@ -75,7 +74,7 @@ export class WorkflowRegistry {
       // their own captured definition snapshot.
       versions.delete(version);
     }
-  
+
     versions.set(version, def);
     return def;
   }

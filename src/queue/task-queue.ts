@@ -611,7 +611,7 @@ export class TaskQueue {
       else if (task.record.status === 'delayed') delayed += 1;
       else if (task.record.status === 'running') running += 1;
     }
-  
+
     this.deps.metrics?.gauge('wr.tasks.running', running);
 
     return {

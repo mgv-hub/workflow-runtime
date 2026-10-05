@@ -316,7 +316,6 @@ export class WorkflowEngine {
 
   private async gate(exec: LiveExec): Promise<boolean> {
     while (exec.record.paused && exec.record.status === 'running' && !exec.stopping) {
-
       if (!exec.gate) {
         let resolveGate!: () => void;
         void new Promise<void>((r) => {
