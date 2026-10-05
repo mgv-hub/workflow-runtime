@@ -1,6 +1,6 @@
 {
   "name": "workflow-runtime",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "General-purpose runtime for workflows, scheduling, state, events, expiration, and automated execution in Node.js",
   "type": "module",
   "main": "./dist/cjs/index.js",
@@ -56,13 +56,6 @@
   ],
   "author": "mgv-hub",
   "license": "MIT",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "12.8.1",
-      "onFail": "download"
-    }
-  },
   "packageManager": "pnpm@12.8.1",
   "devDependencies": {
     "@eslint/js": "^9.14.0",
